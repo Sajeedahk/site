@@ -1,0 +1,506 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
+
+/* Global variables */
+:root {
+  --primary: #bd34a2;
+  --primary-hover: #fc5ddc;
+  --dark-primary: #1b1f24;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+header {
+  position: 100px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--dark-primary);
+  padding: 25px;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+}
+
+header .logo {
+  color: var(--primary);
+  margin-right: 130px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+}
+
+header ul li {
+  margin-right: 30px;
+}
+
+header ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease 0s;
+}
+
+header ul li a:hover {
+  color: var(--primary);
+  transition: all 0.3s ease 0s;
+}
+
+/* tete Section */
+section.tete-section {
+  background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  url('https://static.vecteezy.com/ti/gratis-vektor/p1/24606652-weiblich-designer-arbeiten-auf-computer-beim-nacht-kostenlos-vektor.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+  padding: 150px 120px 50px 200px;
+}
+
+.tete-section__title {
+  font-size: 48px;
+}
+
+.tete-section__title span {
+  color: var(--primary);
+}
+
+.tete-section__desc {
+  color: #e9e6e6;
+}
+
+.tete-img img {
+  margin-left: 30px;
+  border-radius: 15px;
+}
+
+.social-icons {
+  margin:18px 0;
+}
+
+ul.social-icons {
+  list-style: none;
+  display: flex;
+}
+
+.social-icons li {
+  margin-right: 15px;
+  border-radius: 50%;
+  border: 1px solid var(--primary);
+  padding: 8px 12px;
+}
+
+.social-icons li:hover {
+  background-color: var(--primary);
+  transition: all 0.3s ease 0s;
+}
+
+.social-icons li a {
+  text-decoration: none;
+  color: #ececec;
+  font-size: 18px;
+  transition: all 0.3s ease 0s;
+}
+
+.tete-buttons button {
+  margin-right: 10px;
+}
+
+.tete-buttons button > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* boutons */
+.btn {
+  padding: 10px 20px;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.btn.btn-primary {
+  background-color: var(--primary);
+  color: var(--dark-primary);
+  font-weight: 600;
+}
+
+.btn.btn-primary:hover {
+  background-color: var(--primary-hover);
+  transition: all 0.3s ease 0s;
+}
+
+.btn-dark-outlined {
+  background-color: var(--dark-primary);
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.btn-dark-outlined:hover {
+  cursor: pointer;
+  background-color: var(--primary);
+  color: #fff ;
+  transition: all 0.3s ease 0s;
+}
+
+/* à propos Section */
+section.propos {
+  background-color: #22282f;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+}
+
+
+.propos-content {
+  margin-left: 100px;
+  max-width: 600px;
+}
+
+.propos-content h2 {
+  font-size: 33px;
+}
+
+.propos-content h2 > span {
+  color: var(--primary);
+}
+
+.propos-content p {
+  color: #c4c4c4;
+  font-size: 15px;
+}
+
+.propos-content button {
+  margin-top: 30px;
+  font-size: 15px;
+}
+
+.propos-content button > a {
+  text-decoration: none;
+  color: var(--dark-primary);
+}
+
+/* Projets Section */
+section.projets-section {
+  background-color: var(--dark-primary);
+  color: #fff;
+  padding: 50px 120px;
+}
+
+.projets-section h2 {
+  font-size: 28px;
+  text-align: center;
+}
+
+.projets-section h2 > span {
+  color: var(--primary);
+}
+
+.projets-cards {
+  display: flex;
+}
+
+.projets-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; 
+  justify-content: center; 
+}
+
+.projet-card {
+  flex: 1 1 300px; 
+  max-width: 400px; 
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+
+.projets-card-box {
+  width: 33.33%;
+  margin: 35px 10px;
+  padding: 33px;
+  background-color: #22282f;
+  border-radius: 5px;
+  transition: all 0.5s ease 0s;
+}
+
+.projets-card-box:hover {
+  box-shadow: 3px 5px 20px #b925ac;
+  transition: all 0.5s ease 0s;
+  transform: translateY(-2px);
+}
+
+.projets-card-box__icons > i {
+  font-size: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--primary);
+  padding: 20px;
+}
+
+.projets-card-box:hover .projets-card-box__icons > i {
+  color: var(--primary);
+  background-color: var(--dark-primary);
+  transition: all 0.5s ease 0s;
+}
+
+.projets-card-box__desc h4 {
+  font-size: 18px;
+  margin: 18px 0 10px 0;
+}
+
+.projets-card-box__desc p {
+  font-size: 14px;
+  color: #c4c4c4;
+}
+
+.projets-card-box__buttons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projets-card-box__buttons button {
+  background-color: #22282f;
+}
+
+.projets-card-box__buttons button > a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #fff;
+}
+
+/* Contact Section */
+section.contact-section {
+  background-color: #22282f;
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+}
+
+.contact-section h2 {
+  font-size: 28px;
+  margin: 18px 0;
+}
+
+.contact-section h2 > span {
+  color: var(--primary);
+}
+
+.contact-section form div > input,
+textarea {
+  background-color: #c4c4c4;
+  width: 500px;
+  padding: 5px 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  resize: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-section form div > input:focus,
+textarea:focus {
+  border: 10px solid var(--primary);
+}
+
+.contact-section form div > button {
+  font-size: 14px;
+}
+
+.contact__github {
+  margin-top: 15px;
+}
+
+.contact__github button {
+  padding: 10px 44px;
+  background-color: #171515;
+  font-size: 14px;
+}
+
+.contact__github button > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.contact__github button > a > i {
+  font-size: 16px;
+}
+
+.contact__github button:hover {
+  background-color: #030303;
+}
+
+
+/* Media queries */
+@media only screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  header .logo {
+    margin: auto;
+  }
+
+  header ul {
+    margin-top: 10px;
+  }
+
+  /* Hero Section */
+  section.tete-section {
+    flex-direction: column;
+    padding: 40px;
+    padding-top: 130px;
+  }
+
+  .tete-img img {
+    display: none;
+  }
+
+  /* propos Section */
+  section.propos-section {
+    flex-direction: column;
+    padding: 40px;
+  }
+
+  .propos-content {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  /* Projets Section */
+  section.projets-section {
+    padding: 40px;
+  }
+
+  .projets-cards {
+    margin-top: 15px;
+    flex-direction: column;
+  }
+
+  .projets-card-box {
+    width: 100%;
+    margin: 10px 10;
+  }
+
+  /* Contact Section */
+  .contact-section form div input,
+  textarea {
+    width: 100%;
+  }
+
+}
+
+/* Compétences Section */
+section.competences-section {
+  background-color: var(--dark-primary);
+  color: #fff;
+  padding: 50px 120px;
+  text-align: center;
+}
+
+.competences-section h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.competences-section h2 > span {
+  color: var(--primary);
+}
+
+.competences-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.competence {
+  background-color: #22282f;
+  padding: 25px;
+  border-radius: 10px;
+  width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.competence i {
+  font-size: 30px;
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+
+.competence:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(189, 52, 162, 0.5);
+}
+
+.banniere-ecole {
+  background-image: url("https://www.efrei.fr/wp-content/uploads/2024/12/Efrei-logo-450x309.png"); 
+  background-position: left;
+  background-repeat: no-repeat;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.banniere-ecole::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2); /* Assombrit le fond */
+  z-index: 0;
+}
+
+.contenu-banniere {
+  position: relative;
+  z-index: 1;
+}
+
+.contenu-banniere h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.btn-banniere {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #ff4f8b;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.btn-banniere:hover {
+  background-color: #e13f76;
+}

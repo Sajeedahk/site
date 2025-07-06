@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/favicon.png">
+    <title>Sajeedah - Portfolio</title>
+
+    <!-- Font Awesome icones -->
+    <script src="https://kit.fontawesome.com/a9cdbedf57.js" crossorigin="anonymous"></script>
+
+    <!-- Style CSS -->
+
+    <link rel="stylesheet" id="themeStylesheet" href="style.css">
+
+
+</head>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("540MG0JV_fbuEQW1G"); 
+  })();
+</script>
+
+
+<body>
+
+    <header>
+
+        <div>
+            <ul>
+                <li>
+                    <a href="#Accueil">Accueil</a>
+                </li>
+                <li>
+                    <a href="#Formation">Formation</a>
+                </li>
+                <li>
+                    <a href="#propos">À propos</a>
+                </li>
+                <li>
+                    <a href="#Competences">Compétences</a>
+                </li>
+                <li>
+                    <a href="#projets">Projets</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+
+    <main>
+
+        <!-- tete Section -->
+        <section class="tete-section" id="Accueil">
+            <div>
+                <div>
+                    <h4 title="bonjour">Bonjour !</h4>
+                    <h2 class="tete-section__title">Je suis <span>Sajeedah</span></h2>
+                    <p class="tete-section__desc"></p>
+                </div>
+
+                <!-- Icônes -->
+                <div class="tete-buttons">
+                    <button class="btn btn-dark-outlined">
+                        <a href="https://www.linkedin.com/in/sajeedah-kalloo/" download><i
+                            class="fa-brands fa-linkedin"></i></a>  
+                    </button>
+                    <button class="btn btn-dark-outlined">
+                        <a href="https://github.com/Sajeedahk" download><i
+                            class="fa-brands fa-github"></i></a>  
+                    </button>
+                </div>
+            </div>
+
+      
+        </section>
+
+        <section class="banniere-ecole" id="Formation">
+            <div class="contenu-banniere">
+                <h2>à voir </h2>
+                <a href="https://iut.univ-paris8.fr/but-informatique" target="_blank" class="btn-banniere">
+                Découvrir la formation
+                </a>
+            </div>
+        </section>
+
+
+        <!-- à propos Section  -->
+        <section class="section propos" id="propos">
+
+            <div class="contenu propos">
+                <h2>à propos<br> <span></span></h2>
+                <br>
+                <p>
+                    Actuellement en L1 MIASHS, je m’apprête à rejoindre la 2ᵉ année d'un cursus Informatique à la rentrée.  
+                    Mon parcours m’a donné une approche hybride entre la logique mathématique, les sciences humaines et l’informatique — un vrai combo pour aborder le code avec curiosité, méthode et sens.  
+                    Je suis passionnée par le développement et motivée à apprendre toujours plus, dans un cadre concret et stimulant.  
+                    Si vous cherchez une alternante sérieuse, curieuse et prête à contribuer avec énergie à vos projets tech… let’s talk !
+                  
+                </p>
+
+                
+            </div>
+
+        </section>
+
+        <!-- Compétences Section -->
+        <section class="competences-section" id="Competences">
+            <h2>Mes <span>Compétences</span></h2>
+            <div class="competences-grid">
+                <div class="competence">
+                    <i class="fa-solid fa-code"></i>
+                    <h4>Développement</h4>
+                    <p>HTML, CSS, Python, SQL, Java</p>
+                </div>
+                <div class="competence">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <h4>Outils</h4>
+                    <p>VS Code, GitHub, Canva</p>
+                </div>
+                <div class="competence">
+                    <i class="fa-solid fa-language"></i>
+                    <h4>Langues</h4>
+                    <p>Anglais B2, Français natif</p>
+                </div>
+                <div class="competence">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <h4>Pack Office</h4>
+                    <p>Word, Excel, PowerPoint </p>
+                </div>
+            </div>
+              
+        </section>
+
+
+        <!-- Projets Section -->
+        <section class="projets-section" id="projets">
+            <h2>Mes derniers <span>Projets</span></h2>
+            <div class="projets-cards">
+                <div class="projets-card-box">
+                    <div class="projets-card-box__icons">
+                        <i class="fa-solid fa-dragon"></i> 
+                    </div>
+                    <div class="projets-card-box__desc">
+                        <h4>Snake</h4>
+                        <p>Un petit jeu Snake développé avec Python en utilisant la bibliothèque Tkinter pour l’interface graphique.
+                        </p>
+                    </div>
+                    <div class="projets-card-box__buttons">
+                        <button class="btn btn-dark-outlined">
+                            <a href="https://github.com/Sajeedahk/snake.py" target="_blank">Voir <i
+                                    class="fa-solid fa-external-link"></i></a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="projets-card-box">
+                    <div class="projets-card-box__icons">
+                        <i class="fa-solid fa-file-code"></i> 
+                    </div>
+                    <div class="projets-card-box__desc">
+                        <h4>Analyse des prénoms en France</h4>
+                        <p>Analyse de données visant à explorer les prénoms les plus donnés en France à travers un fichier CSV. L’objectif principal était de me familiariser avec les bibliothèques Pandas, NumPy et Matplotlib.</p>
+
+                    </div>
+                    <div class="projets-card-box__buttons">
+                        <button class="btn btn-dark-outlined">
+                            <a href="https://github.com/Sajeedahk/Analyse_des_prenoms_en_France.git" target="_blank">Voir <i
+                                    class="fa-solid fa-external-link"></i></a>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="projets-card-box">
+                    <div class="projets-card-box__icons">
+                        <i class="fa-solid fa-lock"></i> 
+                    </div>
+                    <div class="projets-card-box__desc">
+                        <h4>Générateur et vérificateur de mot de passe</h4>
+                        <p>Application graphique développée en Python permettant de générer des mots de passe aléatoires et de vérifier leur sécurité (longueur, majuscule, minuscule, chiffre, caractère spécial). Interface utilisateur simple et interactive avec messages de validation</p>
+
+                    </div>
+                    <div class="projets-card-box__buttons">
+                        <button class="btn btn-dark-outlined">
+                            <a href="https://github.com/Sajeedahk/Mot_de_passe" target="_blank">Voir <i 
+                                class="fa-solid fa-external-link"></i></a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="projets-card-box">
+                    <div class="projets-card-box__icons">
+                        <i class="fa-solid fa-mug-hot"></i> 
+                    </div>
+                    <div class="projets-card-box__desc">
+                        <h4>Analyse des transactions d'un coffee shop</h4>
+                        <p>Analyse complète des transactions d’un coffee shop. L’objectif est de tirer des conclusions pertinentes et de proposer des solutions adaptées afin de mieux répondre à la demande des clients.
+
+                        </p>
+                    </div>
+                    <div class="projets-card-box__buttons">
+                        <button class="btn btn-dark-outlined">
+                            <a href="" target="_blank">à venir <i
+                                    class="fa-solid fa-external-link"></i></a>
+                        </button>
+                    </div>
+                </div>
+
+                   
+            </div>
+              
+
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <h2>Contactez <span>Moi!</span></h2>
+            <form action="">
+                <div>
+                    <input type="text" name="nom" placeholder="nom" required>
+                </div>
+                <div>
+                    <input type="email" name="email" placeholder="email" required>
+                </div>
+                <div>
+                    <textarea name="message" placeholder="message" rows="5"></textarea>
+                </div>
+                <div>
+                    <button class="btn btn-primary">ENVOYER UN MESSAGE</button>
+                </div>
+            </form>
+            <p id="confirmationMessage" style="display: none; color: green; margin-top: 15px;">
+                Message envoyé avec succès !
+            </p>
+
+            <script>
+                document.querySelector("form").addEventListener("submit", function(e) {
+                  e.preventDefault();
+              
+                  emailjs.sendForm('service_nr0yrv8', 'template_soeou8d', this)
+                    .then(() => {
+                        this.reset();
+                      alert("Message envoyé !");
+                    }, (error) => {
+                      alert("Erreur : " + error.text);
+                    });
+                });
+              </script>
+              
+        </section>
+
+    </main>
+
+
+</body>
+
+</html>
