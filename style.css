@@ -463,13 +463,15 @@ section.competences-section {
   box-shadow: 0 4px 15px rgba(189, 52, 162, 0.5);
 }
 
-.banniere-ecole {
-  background-image: url("https://www.efrei.fr/wp-content/uploads/2024/12/Efrei-logo-450x309.png"); 
-  background-position: left;
+banniere-ecole {
+  background-image: url("https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/Generator_featured%20images/Languages/French/LOGO_EFREI-WEB_blanc.png"); 
+  background-color: var(--dark-primary);
+  background-position: right 20% bottom 45%;
+  background-size: 30%;
   background-repeat: no-repeat;
   padding: 100px 20px;
-  text-align: center;
-  color: white;
+  text-align: left 20%;
+  color: rgb(255, 255, 255);
   position: relative;
 }
 
