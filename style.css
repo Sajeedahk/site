@@ -5,6 +5,7 @@
   --primary: #bd34a2;
   --primary-hover: #fc5ddc;
   --dark-primary: #1b1f24;
+  --light-primary: #22282f;
 }
 
 * {
@@ -73,7 +74,6 @@ section.tete-section {
   background-repeat: no-repeat;
   color: #fff;
   display: flex;
-  align-items: center;
   padding-top: 100px;
   padding: 150px 120px 50px 200px;
 }
@@ -171,18 +171,9 @@ ul.social-icons {
 section.propos {
   background-color: #22282f;
   color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 60px;
+  text-align: justify;
+  padding: 100px;
 }
-
-
-.propos-content {
-  margin-left: 100px;
-  max-width: 600px;
-}
-
 .propos-content h2 {
   font-size: 33px;
 }
@@ -205,6 +196,30 @@ section.propos {
   text-decoration: none;
   color: var(--dark-primary);
 }
+
+.propos-softskill h2 {
+  font-size: 25px;
+  text-align: center;
+}
+.softskill {
+  display: block;
+  justify-content: center;
+  gap: 30px;
+}
+
+.softskill {
+  background-color:var(--primary);
+  padding: 25px;
+  border-radius: 10px;
+  width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.softskill:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(189, 52, 162, 0.5);
+}
+
 
 /* Projets Section */
 section.projets-section {
@@ -364,18 +379,50 @@ textarea:focus {
 /* Media queries */
 @media only screen and (max-width: 768px) {
   header {
+    padding: 20px;
     flex-direction: column;
-    align-items: flex-start;
+    text-align: center;
   }
   header .logo {
     margin: auto;
   }
 
   header ul {
+    flex-direction: column;
     margin-top: 10px;
   }
 
   /* Hero Section */
+    .tete-section__title {
+    font-size: 28px;
+    text-align: center;
+  }
+  .tete-section__desc {
+    text-align: center;
+  }
+   .tete-buttons {
+    text-align: center;
+  }
+  .banniere-ecole {
+    background-size: 25%; 
+    background-position: center bottom;
+    padding: 60px 20px;
+  }
+
+  .contenu-banniere h2 {
+    max-width: 250px;
+    font-size: 1.4em;
+  }
+
+  .contenu-banniere {
+  max-width: 250px;
+  text-align: center;
+  flex-direction: column;
+  padding: 40px;
+  margin-left: 0;
+  margin-top: 30px;
+}
+
   section.tete-section {
     flex-direction: column;
     padding: 40px;
@@ -427,6 +474,9 @@ section.competences-section {
   padding: 50px 120px;
   text-align: center;
 }
+.competences-section {
+    padding: 40px 20px;
+}
 
 .competences-section h2 {
   font-size: 28px;
@@ -448,7 +498,7 @@ section.competences-section {
   background-color: #22282f;
   padding: 25px;
   border-radius: 10px;
-  width: 250px;
+  width: 90%;
   transition: transform 0.3s ease;
 }
 
@@ -463,40 +513,38 @@ section.competences-section {
   box-shadow: 0 4px 15px rgba(189, 52, 162, 0.5);
 }
 
+
+/* formation Section */
 .banniere-ecole {
   background-image: url("https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/Generator_featured%20images/Languages/French/LOGO_EFREI-WEB_blanc.png"); 
   background-color: var(--dark-primary);
-  background-position: right 20% bottom 45%;
+  background-position: bottom right;
   background-size: 30%;
   background-repeat: no-repeat;
-  padding: 100px 20px;
-  text-align: left 20%;
+  text-align: center;
+  padding: 60px 20px;
   color: rgb(255, 255, 255);
-  position: relative;
-}
-
-.banniere-ecole::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0, 0, 0, 0.2); /* Assombrit le fond */
-  z-index: 0;
 }
 
 .contenu-banniere {
   position: relative;
-  z-index: 1;
+  bottom: 20px;
+  left: 60px;
+  z-index: auto;
+  max-width: 800px;
+  text-align: left;
 }
 
 .contenu-banniere h2 {
-  font-size: 2em;
+  font-size: 1.5em;
   margin-bottom: 20px;
+  margin-left: 0px;
 }
 
 .btn-banniere {
   display: inline-block;
   padding: 12px 25px;
-  background-color: #ff4f8b;
+  background-color: var(--primary);
   color: white;
   text-decoration: none;
   border-radius: 8px;
@@ -504,5 +552,10 @@ section.competences-section {
 }
 
 .btn-banniere:hover {
-  background-color: #e13f76;
+  background-color: var(--light-primary);
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
